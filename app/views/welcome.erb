@@ -1,1 +1,8 @@
 <h1>Jams - An application for all your music needs!</h1>
+<h2>Welcome to the Sinatra Template!</h2>
+
+<% @artists.each do |artist|  %>
+<li>  <a href="/artists/<%= artist.id %>"><%= artist.name  %></a>:
+  <%= artist.age  %>
+</li>
+<% end %>
